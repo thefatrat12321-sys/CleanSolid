@@ -29,8 +29,21 @@
         }
 
     }
-
+    class CartBloc {
+        //todo lo relacionado a la logica del carrito del compras
+        onAddToCart(productId: number) {
+            //Agregar al carrito de compras
+            console.log('Agregando al carrito ', productId);
+        }
+    }
+    class MailerBloc {
+        notifyClients() {
+            console.log("Enciando correo a los clientes");
+        }
+    }
+    const mailerBloc = new MailerBloc()
     const productBloc = new ProductBloc();
+    const cartBloc = new CartBloc();
 
     productBloc.loadProduct(10);
     productBloc.saveProduct({ id: 10, name: 'OLED TV' });
