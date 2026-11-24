@@ -38,7 +38,7 @@
     }
     class MailerBloc {
         notifyClients() {
-            console.log("Enciando correo a los clientes");
+            console.log("Enviando correo a los clientes");
         }
     }
     const mailerBloc = new MailerBloc()
@@ -49,12 +49,5 @@
     productBloc.saveProduct({ id: 10, name: 'OLED TV' });
     productBloc.notifyClients();
     productBloc.onAddToCart(10);
-
-
-
-
-
-
-
 
 })();
